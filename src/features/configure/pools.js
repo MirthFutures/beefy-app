@@ -22,7 +22,31 @@ export const pools = [
     assets: ['BIFI'],
     callFee: 0.5,
   },
-  
+
+  {
+   id: 'jul-bifi-bnb',
+   logo: 'bnb-pairs/BIFI-BNB.png',
+   name: 'BIFI-BNB LP',
+   token: 'BIFI-BNB LP',
+   tokenDescription: 'Uses: Julswap',
+   tokenAddress: '0xd3665568474cC090aB6B243333c2A1A3f13a9C7F',
+   tokenDecimals: 18,
+   tokenDescriptionUrl: '#',
+   earnedToken: 'mooJulBIFI-BNB',
+   earnedTokenAddress: '0x6a3fF116a10349BB40B22FD7687871d5D560d715',
+   earnContractAddress: '0x6a3fF116a10349BB40B22FD7687871d5D560d715',
+   pricePerFullShare: 1,
+   tvl: 0,
+   oracle: 'julswap-lp',
+   oracleId: 'jul-bifi-bnb',
+   oraclePrice: 0,
+   depositsPaused: false,
+   status: 'active',
+   platform: 'Julswap',
+   assets: ['Bifi', 'BNB'],
+   callFee: 0.5,
+ },
+
   {
     id: 'banana-banana-bnb',
     logo: 'degens/banana-bnb.svg',
@@ -46,7 +70,7 @@ export const pools = [
     assets: ['BANANA', 'BNB'],
     callFee: 0.5,
   },
-  
+
   {
     id: 'banana-banana-busd',
     logo: 'degens/banana-busd.svg',

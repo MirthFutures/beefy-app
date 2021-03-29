@@ -1,3 +1,5 @@
+import { InfoOutlined } from "@material-ui/icons";
+
 const styles = (theme) => ({
   container: {
     display: 'flex',
@@ -26,6 +28,7 @@ const styles = (theme) => ({
     fontWeight: '600',
     color: theme.palette.text.primary,
     lineHeight: '14px',
+    display: 'block',
     letterSpacing: 0,
     '&:hover,&:focus': {
       color: theme.palette.text.secondary,

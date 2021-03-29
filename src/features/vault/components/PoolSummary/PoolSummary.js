@@ -22,6 +22,7 @@ const PoolSummary = ({
   isOpen,
   balanceSingle,
   sharesBalance,
+  urls,
   apy,
   fetchBalancesDone,
   fetchApysDone,
@@ -81,6 +82,7 @@ const PoolSummary = ({
           logo={pool.logo}
           description={t('Vault-Description', { vault: pool.tokenDescription })}
           launchpool={launchpool}
+          buyTokenUrl={pool.buyTokenUrl}
           addLiquidityUrl={pool.addLiquidityUrl}
         />
         <Grid item md={8} xs={7}>

@@ -22,7 +22,7 @@ const styles = (theme) => ({
     letterSpacing: 0,
   },
   url: {
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '600',
     color: theme.palette.text.primary,
     lineHeight: '14px',

@@ -1,3 +1,5 @@
+import { FullscreenExit } from "@material-ui/icons";
+
 const styles = (theme) => ({
   container: {
     display: 'flex',
@@ -22,7 +24,7 @@ const styles = (theme) => ({
     letterSpacing: 0,
   },
   url: {
-    fontSize: '14px',
+    fontSize: '12px',
     fontWeight: '600',
     color: theme.palette.text.primary,
     lineHeight: '14px',

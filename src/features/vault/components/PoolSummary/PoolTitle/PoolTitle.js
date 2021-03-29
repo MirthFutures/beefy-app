@@ -35,7 +35,6 @@ const PoolTitle = ({ name, logo, description, launchpool, buyTokenUrl, addLiquid
           <div style={{ marginTop: '4px' }}>
             <a
               className={classes.url}
-              display='block'
               href={buyTokenUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -52,7 +51,6 @@ const PoolTitle = ({ name, logo, description, launchpool, buyTokenUrl, addLiquid
           <div style={{ marginTop: '4px' }}>
             <a
               className={classes.url}
-              display='block'
               href={addLiquidityUrl}
               target="_blank"
               rel="noopener noreferrer"

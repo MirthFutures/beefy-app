@@ -9,7 +9,7 @@ import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const PoolTitle = ({ name, logo, description, launchpool, addLiquidityUrl }) => {
+const PoolTitle = ({ name, logo, description, launchpool, buyTokenUrl, addLiquidityUrl }) => {
   const classes = useStyles();
   const { t } = useTranslation();
 
@@ -28,21 +28,44 @@ const PoolTitle = ({ name, logo, description, launchpool, addLiquidityUrl }) => 
         <Typography className={classes.subtitle} variant="body2">
           {description}
         </Typography>
-        {addLiquidityUrl ? (
+        <table> 
+            <tr>
+              <td> 
+        {buyTokenUrl ? (
           <div style={{ marginTop: '4px' }}>
             <a
               className={classes.url}
-              href={addLiquidityUrl}
+              display='block'
+              href={buyTokenUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{name === 'WBNB' ? t('Wrap BNB') : t('Add-Liquidity')}</span>
+              <span>{name === 'WBNB' ? t('Wrap BNB') :t('Buy Token ')}</span>
             </a>
           </div>
         ) : (
           ''
         )}
-
+        </td>
+        <td>
+        {addLiquidityUrl ? (
+          <div style={{ marginTop: '4px' }}>
+            <a
+              className={classes.url}
+              display='block'
+              href={addLiquidityUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{t('| Add-Liquidity')}</span>
+            </a>
+          </div>
+        ) : (
+          ''
+        )}
+             </td>
+          </tr>
+        </table>
         {launchpool ? (
           <a className={classes.btnBoost} href={'/stake/pool/' + launchpool.poolIndex}>
             <img alt="Boost" src={require('images/stake/boost.svg')} height={15} />

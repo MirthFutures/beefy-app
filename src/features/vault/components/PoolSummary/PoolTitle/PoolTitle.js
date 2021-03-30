@@ -55,7 +55,7 @@ const PoolTitle = ({ name, logo, description, launchpool, buyTokenUrl, addLiquid
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{t('| Add Liquidity')}</span>
+              <span>{t('Add Liquidity')}</span>
             </a>
           </div>
         ) : (

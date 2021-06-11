@@ -94,7 +94,7 @@ export const bscPools = [
     status: 'active',
     platform: 'PancakeSwap',
     assets: ['CAKE'],
-    withdrawalFee: 'no',
+    withdrawalFee: 'no deposit or',
     callFee: 0.5,
     buyTokenUrl:
       'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
